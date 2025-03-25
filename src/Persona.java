@@ -7,6 +7,7 @@ public class Persona {
     private int edad;
     private String email;
     private String dni;
+    private String direccion;
 
     public Persona(String nombre, String apellidos) {
         this.nombre = nombre;
@@ -77,6 +78,14 @@ public class Persona {
 
     public void cumplirAnios() {
         this.edad++;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     @Override
